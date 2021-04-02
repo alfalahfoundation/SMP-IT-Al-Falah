@@ -1,0 +1,25 @@
+.about-page{
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    height: 170vh;
+    display: flex;
+}
+@include bp("smaller"){
+    .about-page{ 
+        height: 160vh;
+    }
+
+}
+@include bp("small"){
+    .about-page{ 
+        height: 120vh;
+    }
+
+}
+@include bp("medium"){
+    .about-page{ 
+        height: 120vh;
+    }
+
+}
