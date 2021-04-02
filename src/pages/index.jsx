@@ -82,7 +82,26 @@ class Index extends React.Component {
       
       <div className="homepage-div homepage-div2">
      
-            <h2>KENAPA KAMI ?</h2>
+            <h2>Kenapa Kami ?</h2>
+            <p>Transformasikan hidup Anda melalui pendidikan Mohamad Alaloush memulai karier baru dalam pengembangan perangkat lunak dengan mengikuti kursus di Udemy. Apa yang dapat Anda lakukan?</p>
+           
+        </div>
+        <Iframe url="https://www.youtube.com/embed/Na-OyAU0gGQ"
+                                  width="700px"
+                                  height="300px"
+                                  id="myId"
+                                  className="myClassname"
+                                  display="initial"
+                                  position="relative"/>      
+      </div>                            
+    </Fade>
+    <Fade right>  
+      <div className="homepage homepage2">  
+      
+      
+      <div className="homepage-div homepage-div2">
+     
+            <h2>Kenapa Kami ?</h2>
             <p>Transformasikan hidup Anda melalui pendidikan Mohamad Alaloush memulai karier baru dalam pengembangan perangkat lunak dengan mengikuti kursus di Udemy. Apa yang dapat Anda lakukan?</p>
            
         </div>

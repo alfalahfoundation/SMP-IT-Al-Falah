@@ -168,14 +168,14 @@
     .homepage-div2{
       p{
         max-width: 30em;
-        // padding-left: 3em;
+        padding-top: 10vh;
         color: black;
       }
     }
     h2{
       font-family: 'Roboto', sans-serif;
-      font-size: 3em;
-      font-weight: 900;
+      font-size: 2em;
+      font-weight: 600;
       // color:$textColor;
     }
   }
@@ -188,6 +188,8 @@
     justify-content: flex-end;
     display: flex;
     align-items: left;
+    flex-direction: row;
+    padding-top: 10vh;
   }
 
 }
