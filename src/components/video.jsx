@@ -80,7 +80,8 @@ const Video = () => {
                                 className="myClassname"
                                 display="initial"
                                 position="relative"/> */}
-                                  <Player src={`https://muhzulzidan.my.id/`+`${node.video.value}`}>
+                                  <Player src={`https://muhzulzidan.my.id/ 
+                                  ${node.video.value}`}>
                                     <BigPlayButton position="center" />
                                   </Player>
                         </ul>

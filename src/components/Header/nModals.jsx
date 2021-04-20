@@ -123,6 +123,7 @@ class Modal extends Component {
             className={`background`}
             onMouseDown={this.handleClick}
             ref={this.background}
+            aria-name="background"
           />
         </StyledModal>,
         this.el

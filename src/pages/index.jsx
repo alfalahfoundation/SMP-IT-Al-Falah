@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 import Layout from "../components/Layout"
 // import View from "../components/View"
-import Status from "../components/Status"
+// import Status from "../components/Status"
 // import Header from "../components/Header/index"
 import Iframe from 'react-iframe'
 // import Modals from "../components/Header/mainmodals"
@@ -13,6 +13,7 @@ import Dot from "../assets/dot.inline.svg"
 import Circle from "../assets/circle.inline.svg"
 import Roundbox from "../assets/roundboxsolid.inline.svg"
 import Halfa from "../assets/halfa.inline.svg"
+import Apostrope from "../assets/apostrope.inline.svg"
 
 class Index extends React.Component {
   state ={className:"" };
@@ -38,11 +39,11 @@ class Index extends React.Component {
 
     const { location } =  this.props  
 
-    let modal = "modal-desktop";
+    // let modal = "modal-desktop";
 
     return (
      <Layout location={location}>
-        <nav className={`header ` + `${this.state.className}`} ref={(r)=>this.ref=r}  >
+        <nav className={`header ${this.state.className}`} ref={(r)=>this.ref=r}  >
                     <div className="header-logo">
                       <span className="header-logo-span"><Link to="/" >E-Learning</Link></span>
                     </div>
@@ -66,6 +67,7 @@ class Index extends React.Component {
       <Roundbox className="homepage-roundbox1"/>
       <Circle className="homepage-circle"/>
       <Halfa className="homepage-halfa"/>
+      
       {/* <h2 className="homepage-A">A</h2> */}
         <div className="homepage-div homepage-div1">
           <h2>Fokus & Tuntas</h2>
@@ -96,22 +98,38 @@ class Index extends React.Component {
       </div>                            
     </Fade>
     <Fade right>  
-      <div className="homepage homepage2">  
-      
-      
-      <div className="homepage-div homepage-div2">
-     
-            <h2>Kenapa Kami ?</h2>
-            <p>Transformasikan hidup Anda melalui pendidikan Mohamad Alaloush memulai karier baru dalam pengembangan perangkat lunak dengan mengikuti kursus di Udemy. Apa yang dapat Anda lakukan?</p>
-           
+      <div className="homepage homepage3">        
+        <div className="homepage-div homepage-div3">
+            <div className="homepage-box">
+              <Apostrope className="homepage-apostrope"/>
+              <div className="another-box">
+                  <div className="avatar"></div>
+                  <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
+                  <h4 className="h4">Farrel Hadinata</h4>
+                  <p className="p">Alumni angkatan IV</p>
+              </div>
+            </div>
+            <div className="homepage-box">
+              <Apostrope className="homepage-apostrope"/>
+              <div className="another-box">
+                  <div className="avatar"></div>
+                  <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
+                  <h4 className="h4">Farrel Hadinata</h4>
+                  <p className="p">Alumni angkatan IV</p>
+              </div>
+            </div>
+            <div className="homepage-box">
+              <Apostrope className="homepage-apostrope"/>
+              <div className="another-box">
+                  <div className="avatar"></div>
+                  <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
+                  <h4 className="h4">Farrel Hadinata</h4>
+                  <p className="p">Alumni angkatan IV</p>
+              </div>
+            </div>
+              
+            
         </div>
-        <Iframe url="https://www.youtube.com/embed/Na-OyAU0gGQ"
-                                  width="700px"
-                                  height="300px"
-                                  id="myId"
-                                  className="myClassname"
-                                  display="initial"
-                                  position="relative"/>      
       </div>                            
     </Fade>
 

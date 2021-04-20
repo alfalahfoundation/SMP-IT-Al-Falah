@@ -5,7 +5,7 @@ import { getUser } from "../utils/auth"
 const Profile = () => {
   const user = getUser();
   const { displayName, email, emailVerified } = user;
-  const accessToken = user.stsTokenManager.accessToken; 
+  // const accessToken = user.stsTokenManager.accessToken;
 
 
   return (

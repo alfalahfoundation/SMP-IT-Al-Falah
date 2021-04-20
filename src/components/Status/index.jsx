@@ -13,7 +13,10 @@ export default () => {
       </p>
     )
   } else {
-    const { displayName, email } = getUser()
+    const {
+      displayName, 
+      // email
+     } = getUser()
     details = (
       <p className="text-right px-5"> {displayName}
         {` `}

@@ -12,6 +12,14 @@
     position: absolute;
     right: -10;
   }
+  .homepage-apostrope{
+    display: flex;
+    align-self: start;
+    position: relative;
+    top: -28px;
+    left: 20px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 40%);
+  }
   .homepage-halfa{
     // opacity: .4; 
     height: 50vh;
@@ -33,14 +41,17 @@
     width: 30vw;
     height: 20vh;
     opacity: 0;
+    
   }
   .homepage-roundbox1 {
     @include assets;
     opacity: 0.2;
     width: 20em;
     height: 15em;
-    right: -1vw;
-    top: -200px;
+    right: 39vw;
+    top: -163px;
+    // right: -1vw;
+    // top: -200px;
     transform: rotate(
 78deg
 );
@@ -50,13 +61,15 @@
     opacity: 0;
     width: 20em;
     height: 15vh;
-    left: -10vw;
+    // left: -10vw;
+    left: -104vw;
     top: 0vw;
     transform: rotate(
 9deg
 );
   }
   .homepage-div1{
+    padding-left: 5vw;
     width: 16em;
     button{
       background-color: $linkColor;
@@ -70,7 +83,7 @@
 
   .homepage-div{
 
-    padding-left: 5vw;
+    // padding-left: 5vw;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -85,11 +98,12 @@
   }
 
   .homepage-div2{
+    padding-left: 5vw;
     display: flex;
     align-self: start;
       p{
       padding-top: 1em;
-      max-width: 30em;
+      max-width: 25em;
       display: flex;
       color: black;
     }
@@ -102,6 +116,7 @@
   }
 }
 .homepage1{
+
   background-color: $mainColor;
   height: 95vh;
   h2{
@@ -110,6 +125,7 @@
   
 }
 .homepage2{
+  padding-top: 3rem;
   justify-content: flex-end;
   display: flex;
   align-items: left;
@@ -119,8 +135,50 @@
   }
   iframe{
     width: 80vw;
-    padding: 5vw;
+    margin-top: 2rem;
     @include margin-auto;
+  }
+}
+.homepage3{
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  .homepage-div3{
+    display: flex;
+    flex-direction: column;
+    .homepage-box{
+
+      width: 15rem;
+      height: 28rem;
+      border-radius: 35px;
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4rem;
+      .another-box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+      }
+      .h4{
+        padding-top: 3rem;
+        font-weight: 900;
+        font-size: larger;
+      }
+      .p{
+        color:$textColor;
+      }
+      .avatar{
+        background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+        width: 5rem;
+        height: 5rem;
+        background-size: cover;
+        background-position: top center;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 
@@ -135,13 +193,12 @@
     .homepage-roundbox {
       opacity: 0.1;
     }
-    
     .homepage-circle {
       opacity: .2;
     }
-    
-    height: 80vh;
+
     .homepage-div1{
+
       button{
         background-color: $linkColor;
         @include submit;
@@ -152,7 +209,7 @@
       }
     }
     .homepage-div{
-      max-width: 80vw;
+      // max-width: 120vh;
       p{
         margin-left: auto;
         max-width: 30em;
@@ -176,7 +233,6 @@
       font-family: 'Roboto', sans-serif;
       font-size: 2em;
       font-weight: 600;
-      // color:$textColor;
     }
   }
   .homepage1{
@@ -190,8 +246,24 @@
     align-items: left;
     flex-direction: row;
     padding-top: 10vh;
+    padding-bottom: 10vh;
   }
+  
 
+    .homepage3{
+      height:120vh;
+      padding-top:0px;
+      .homepage-div3{
+        flex-direction: row;
+        max-width:90vw;
+        .homepage-box{
+          margin-right: 5vw;
+          &:last-child{
+            margin: 0;
+          }
+        }
+    }
+  }
 }
 
 // desktop
@@ -199,18 +271,10 @@
 @include bp ("medium"){
 
   .homepage{
-    
-
-
     text-align: left;
     display: flex;
-    height: 60vh;
     .homepage-div1{
-      // padding-top: 17vh;
       font-size:140%;
-      // h2{
-
-      // }
       button{
         background-color: $linkColor;
         @include submit;
@@ -221,7 +285,7 @@
       }
     }
     .homepage-div{
-  
+      max-width: 100vw;
       p{
         margin-left: auto;
         max-width: 30em;
@@ -233,13 +297,10 @@
   
     .homepage-div2{
       display: flex;
-      // align-items: left;
       p{
         text-align: left;
         max-width: 30em;
         display: flex;
-        // padding-left: 3em;
-        // color:$backgroundcolor;
         color: black;
       }
     }
@@ -247,7 +308,6 @@
       font-family: 'Roboto', sans-serif;
       font-size: 3em;
       font-weight: 900;
-      // color:$backgroundColor;
     }
   }
   .homepage1{
@@ -255,10 +315,6 @@
     height: 100vh;
     
   }
-  // .homepage2{
-  //   justify-content: flex-end;
-  //   display: flex;
-  //   align-items: left;
-  // }
+
 
 }

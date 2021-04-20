@@ -56,7 +56,7 @@ class Header extends Component {
     return (
       
     <header>
-      <nav className={`header ` + `header-fixed` + `navbar`}>
+      <nav className={`header header-fixed navbar`}>
         <div className="header-logo nav-belt">
               <span className="header-logo-span"><Link to="/" >E-Learning</Link></span>
           </div>

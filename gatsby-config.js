@@ -89,24 +89,31 @@ module.exports = {
         singletons: [], 
         aliases: {
           collection: {
-            // A_COLLECTION_NAME: 'post',
-            // A_COLLECTION_NAME: 'authors',
-            // A_COLLECTION_NAME: 'email',
-            // A_COLLECTION_NAME: 'profil',
-            // A_COLLECTION_NAME: 'oldpage',
             A_COLLECTION_NAME: 'video',
 
           },
           singleton: {
-            // A_SINGLETON_NAME: 'about',
-            // A_SINGLETON_NAME: 'rahmat',
             A_SINGLETON_NAME: 'privacy',
 
           }
         }, 
-        brokenImageReplacement: 'https://www.google.co.id/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png', // (6)
-      },
+        brokenImageReplacement: 'https://www.google.co.id/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png', 
     },
+  },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Alfalah`,
+        short_name: `Alfalah`,
+        start_url: `/`,
+        background_color: `#EAE8DC`,
+        theme_color: `#BE2623`,
+        display: `standalone`,
+        icon: `static/logo.png`, 
+        cache_busting_mode: 'none',
+        crossOrigin: `use-credentials`,
+      },
+    }
     // {
     //   resolve: "gatsby-plugin-firebase",
     //   options: {
