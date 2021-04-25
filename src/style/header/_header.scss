@@ -17,14 +17,26 @@
         }
     }
 }
+
+.header-logo{
+    svg{
+        width: 3rem;
+    }
+}
+
 .header-logo-span{
-    padding-left: 5vw;
     color: inherit;
     font-size: 1.5em;
     font-weight: 800;
+    svg{
+        fill:$backgroundColor;
+        padding-left: 5vw;
+        width: 4rem;
+    }
 }
 .header-div{
     display: none;
+    font-weight: 600;
     .header-div-link{
         font-size: .9em;
         color: inherit;
@@ -61,6 +73,9 @@
     width: -webkit-fill-available;
     /* width: 100vw; */
     z-index: 1;
+    svg{
+        fill:$logoColor
+    }
 }
 
 @include bp ("small"){
@@ -85,10 +100,13 @@
     }
 }
 .header-logo-span{
-    padding-left: 1em;
+    // padding-left: 1em;
     color: inherit;
     font-size: 1.5em;
     font-weight: 800;
+    svg{
+        width: 5rem;
+    }
 }
 .header-div{
     display: flex;

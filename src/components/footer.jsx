@@ -13,7 +13,7 @@ const Footer = () => {
       <Social></Social>
       <p className={footerP}>
         &copy; {new Date().getFullYear()} Copyright : {" "}
-        <a href="https://gemaclc.com"> E-Learning Courses.com </a>
+        <a href="#"> Alfalah </a>
       </p>
     </div>
 

@@ -79,28 +79,6 @@ module.exports = {
     },
      'gatsby-plugin-optimize-svgs',
     {
-      resolve: '@fika/gatsby-source-cockpit',
-      options: {
-        token: `${process.env.COCKPIT_TOKEN}`,
-        baseUrl:
-          'https://muhzulzidan.my.id', 
-        locales: ['id'], 
-        collections: ['video'], 
-        singletons: [], 
-        aliases: {
-          collection: {
-            A_COLLECTION_NAME: 'video',
-
-          },
-          singleton: {
-            A_SINGLETON_NAME: 'privacy',
-
-          }
-        }, 
-        brokenImageReplacement: 'https://www.google.co.id/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png', 
-    },
-  },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Alfalah`,

@@ -99,6 +99,8 @@
 
   .homepage-div2{
     padding-left: 5vw;
+    padding-bottom: 3rem;
+    width: 90vw;
     display: flex;
     align-self: start;
       p{
@@ -134,9 +136,9 @@
     color:$textColor;
   }
   iframe{
-    width: 80vw;
-    margin-top: 2rem;
     @include margin-auto;
+    width: 80vw;
+
   }
 }
 .homepage3{
@@ -228,11 +230,14 @@
         padding-top: 10vh;
         color: black;
       }
+      h2{
+        font-size: 2em;
+      }
     }
     h2{
       font-family: 'Roboto', sans-serif;
-      font-size: 2em;
-      font-weight: 600;
+      font-size: 3em;
+      font-weight: 800;
     }
   }
   .homepage1{
@@ -247,6 +252,9 @@
     flex-direction: row;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    iframe{
+      margin-right: 5vw;
+    }
   }
   
 
@@ -258,6 +266,7 @@
         max-width:90vw;
         .homepage-box{
           margin-right: 5vw;
+          height: 33rem;
           &:last-child{
             margin: 0;
           }

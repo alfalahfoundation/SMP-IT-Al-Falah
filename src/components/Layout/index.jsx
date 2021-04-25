@@ -6,20 +6,43 @@ import Footer from "../footer"
 
 // Global styles and component-specific styles.
 import "./global.css"
-import {main} from "./main.module.css"
+
+
 
 // let path = ["/", "/about"]
-const Layout = ({ children, location }) => (
+
+
+
+const Layout = ({ children, location }) => {
+
+  let pathnames = [
+    '/',
+  ]
+
+  let mains;
+
+  if (pathnames.includes(location.pathname)) {
+    mains = (
+    <main className="main" style={{padding:"0em"}}>{children}</main>
+    )
+  } else {
+    mains = (
+      <main className="main" >{children}</main>
+    )
+  }
+  console.log(location.pathname)
+  console.log(pathnames)
+  return(
   <div>
     <Helmet title="Sekolah SMP IT Al Falah" />
-    {/* {console.log(location.pathname)} */}
+
     {location.pathname !== "/"  &&
         <Header />
-      }
+    }
     
-    <main className={main} >{children}</main>
+    {mains}
     <Footer/>
   </div>
-)
+)}
 
 export default Layout

@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "author": "zidan <zulzdn@gmail.com>",
   "resolutions": {
-		"graphql": "^15.4.0",
-		"graphql-compose": "^7.25.0",
-		"webpack": "^5.24.2"
-	},
+    "graphql": "^15.4.0",
+    "graphql-compose": "^7.25.0",
+    "webpack": "^5.24.2"
+  },
   "dependencies": {
     "@fika/gatsby-source-cockpit": "^1.1.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -32,6 +32,7 @@
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sass": "^4.3.0",
     "gatsby-source-firebase-collections": "^1.5.0",
+    "midtrans-client": "^1.2.3",
     "postcss": "^8.2.10",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -39,6 +40,7 @@
     "react-firebaseui": "^4.1.0",
     "react-helmet": "^6.1.0",
     "react-iframe": "^1.8.0",
+    "react-midtrans": "^1.0.2",
     "react-reveal": "^1.2.2",
     "sass": "^1.32.11",
     "styled-components": "^5.2.3",

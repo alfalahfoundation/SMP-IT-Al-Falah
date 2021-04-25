@@ -89,8 +89,8 @@ return(
 <form onSubmit={this.handleSubmit} className={subscribeForm} >
 
 <div className={subscribeDesc}>
-  <h2>E-Learning Courses</h2>
-  <p>subscribe untuk mendapatkan informasi terbaru dari gemaclc, atau mungkin saja konten-konten menarik mengenai jasa kami</p>
+  <h2>Alfalah</h2>
+  <p>subscribe untuk mendapatkan informasi terbaru dari Alfalah, atau mungkin saja konten-konten menarik mengenai jasa kami</p>
 </div>
 <div className={subscribeDiv2}>
   <label >
