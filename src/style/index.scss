@@ -1,7 +1,7 @@
 // base
 
-@import "base/variables";
 @import "base/mixing";
+@import "base/variables";
 @import "base/normalize";
 @import "base/breakpoints";
 
@@ -19,7 +19,9 @@
 @import "components/program";
 @import "components/iframe";
 @import "./components/daftar";
+
 // footer
+
 @import "./components/sub";
 @import "./components/social";
 @import "components/footer";
@@ -27,9 +29,6 @@
 // header
 
 @import"./header/header";
-
-// home
-
 
 
 //base
@@ -76,7 +75,9 @@
     display: none;
 }
 
-
+a:hover{
+    color: $logoColor;   
+   }
 
 .iframe{
     width: -webkit-fill-available;

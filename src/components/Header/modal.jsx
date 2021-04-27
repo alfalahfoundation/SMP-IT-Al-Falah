@@ -10,6 +10,7 @@ import Logo from "../../../static/logo.inline.svg"
 const Modal = forwardRef((props, ref) => {
 
   const [display, setDisplay] = useState(false)
+  const [classChange, setClassChange] = useState("")
 
   useImperativeHandle(
     ref,
@@ -21,20 +22,28 @@ const Modal = forwardRef((props, ref) => {
     }
   )
 
-  const handleOpen = () => {
+  const handleOpen = ()=> {
     setDisplay(true);
+    setTimeout(function() {
+    setClassChange("boxDialogue-open")
+ }, 100);
   }
 
   const handleClose = () => {
     setDisplay(false);
+    setTimeout(function() {
+      setClassChange("")
+   }, 100);
   }
+
+
 
   if (display) {
     return (
       <Portal >
           
-          <div className="modal">
-            <div className="box-dialog">
+          <div className={`modal`}>
+            <div className={`box-dialog ${classChange}`}>
               <div className="box-header">
               <div className="modal-logo">
                   <Logo/>

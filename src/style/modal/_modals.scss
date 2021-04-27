@@ -1,24 +1,6 @@
+
+
 .modal{
-    position: absolute;
-    top: 0;
-    right: 0;       
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    transition: opacity ease 0.15s;
-    z-index: 2000;
-    width: 10em;
-        &.fade-in {
-            opacity: 1;
-            transition: opacity 0.6s linear;
-            /* transform: translateY(0);
-            transition: transform 0.25s ease-in-out, box-shadow 0.1s 0.25s linear; */
-        }
-        &.fade-out {
-            opacity: 0;
-            transition: opacity 0.6s linear;
-        }
     .background {
         background: rgba(0,0,0,.33);
         position: fixed;
@@ -34,8 +16,12 @@
         width : 100vw;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100vw;
+        
         z-index: 1050;
+        
+        transition: all 0.3s ease-out;
+
         background-color: #fff;
         box-shadow: 0px 10px 50px hsla(0, 0%, 0%, 0.33);
         .box-content {
@@ -48,6 +34,7 @@
             font-weight:600;
             width: 100%;
             // padding-top: 0;
+            
         }
         .box-header {
             height: 5em;
@@ -103,6 +90,9 @@
         }
         }
     }   
+    .boxDialogue-open{
+        right :0;
+    }       
 }
 
 .modal-desktop{

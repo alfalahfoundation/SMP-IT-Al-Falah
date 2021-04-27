@@ -106,7 +106,7 @@ class Index extends React.Component {
             <h2>Fokus & Tuntas</h2>
             <p>kami akan berusaha untuk membuat anak Anda menjadi anak sholeh dan juga pintar</p>
             <br />
-            <Link to="/daftar"><button className="subscribe-submit"> Daftar</button></Link>
+            <Link to="/daftar"><button > Daftar</button></Link>
           </div>
 
         </div>

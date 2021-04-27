@@ -23,7 +23,7 @@ const Layout = ({ children, location }) => {
 
   if (pathnames.includes(location.pathname)) {
     mains = (
-    <main className="main" style={{padding:"0em"}}>{children}</main>
+    <main className="main main-index" >{children}</main>
     )
   } else {
     mains = (
