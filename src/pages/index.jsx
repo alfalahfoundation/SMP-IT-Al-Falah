@@ -15,6 +15,7 @@ import Circle from "../assets/circle.inline.svg"
 import Roundbox from "../assets/roundboxsolid.inline.svg"
 import Halfa from "../assets/halfa.inline.svg"
 import Apostrope from "../assets/apostrope.inline.svg"
+import Halfo from "../assets/halfo.inline.svg"
 import Logo from "../../static/logo.inline.svg"
 class Index extends React.Component {
 
@@ -42,7 +43,7 @@ class Index extends React.Component {
     }
 
   }
-                                  
+
   render() {
 
     const { location } = this.props
@@ -77,20 +78,20 @@ class Index extends React.Component {
                 <div className="burger-line-3"></div>
               </div>
             </button>
-              <Modal ref={this.modalRef1}>
-                    <Link to="daftar" className="header-div-link">
-                    Daftar
-                    </Link>
-                    <Link to="jurnal" className="header-div-link">
-                    Jurnal
-                    </Link>
-                    <Link to="berita" className="header-div-link">
-                    Berita
-                    </Link>
-                    <Link to="/about" className="header-div-link">
-                    Tentang Kami
-                    </Link>
-              </Modal>
+            <Modal ref={this.modalRef1}>
+              <Link to="daftar" className="header-div-link">
+                Daftar
+              </Link>
+              <Link to="jurnal" className="header-div-link">
+                Jurnal
+              </Link>
+              <Link to="berita" className="header-div-link">
+                Berita
+                </Link>
+              <Link to="/about" className="header-div-link">
+                Tentang Kami
+              </Link>
+            </Modal>
           </div>
         </nav>
 
@@ -106,7 +107,7 @@ class Index extends React.Component {
             <h2>Fokus & Tuntas</h2>
             <p>kami akan berusaha untuk membuat anak Anda menjadi anak sholeh dan juga pintar</p>
             <br />
-            <Link to="/daftar"><button > Daftar</button></Link>
+            <Link to="/daftar"><button className="button"> Daftar</button></Link>
           </div>
 
         </div>
@@ -115,6 +116,7 @@ class Index extends React.Component {
             <div className="homepage-div homepage-div2">
               <h2>Kenapa Kami ?</h2>
               <p>Transformasikan hidup Anda melalui pendidikan Mohamad Alaloush memulai karier baru dalam pengembangan perangkat lunak dengan mengikuti kursus di Udemy. Apa yang dapat Anda lakukan?</p>
+              <Link to="/about"><button className="button"> Lebih Lanjut</button></Link>
             </div>
             <Iframe url="https://www.youtube.com/watch?v=rAcdX5jRRgQ"
               width="700px"
@@ -125,43 +127,51 @@ class Index extends React.Component {
               position="relative" />
           </div>
         </Fade>
-          <div className="homepage homepage3">
-            <div className="homepage-div homepage-div3">
-            <Fade bottom>
-                <div className="homepage-box">
-                  <Apostrope className="homepage-apostrope" />
-                  <div className="another-box">
-                    <div className="avatar"></div>
-                    <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
-                    <h4 className="h4">Farrel Hadinata</h4>
-                    <p className="p">Alumni angkatan IV</p>
-                  </div>
-                </div>
-            </Fade>
-            <Fade bottom>
-                <div className="homepage-box">
-                  <Apostrope className="homepage-apostrope" />
-                  <div className="another-box">
-                    <div className="avatar"></div>
-                    <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
-                    <h4 className="h4">Farrel Hadinata</h4>
-                    <p className="p">Alumni angkatan IV</p>
-                  </div>
-                </div>
-            </Fade>
-            <Fade bottom>
-                <div className="homepage-box">
-                  <Apostrope className="homepage-apostrope" />
-                  <div className="another-box">
-                    <div className="avatar"></div>
-                    <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
-                    <h4 className="h4">Farrel Hadinata</h4>
-                    <p className="p">Alumni angkatan IV</p>
-                  </div>
-                </div>
-            </Fade>
-            </div>
+        <div className="homepage">
+            <Halfo className="homepage-halfo"/> 
+        </div>
+        <div className="homepage homepage3">
+          <div className="homepage homepage-div3-desc">
+            <h3>Biarkan Mereka Berbicara tentang Kami</h3>
+            <p>Lamoille South Unified Union (LSUU) is where the students of Elmore, Morristown and Stowe construct, express and act. Our mission is to support students as effective communicators, thinkers and problem solvers, and responsible citizens as they learn in the classroom, community and beyond.</p>
+
           </div>
+          <div className="homepage-div homepage-div3">
+            <Fade bottom>
+              <div className="homepage-box">
+                <Apostrope className="homepage-apostrope" />
+                <div className="another-box">
+                  <div className="avatar"></div>
+                  <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
+                  <h4 className="h4">Farrel Hadinata</h4>
+                  <p className="p">Alumni angkatan IV</p>
+                </div>
+              </div>
+            </Fade>
+            <Fade bottom>
+              <div className="homepage-box">
+                <Apostrope className="homepage-apostrope" />
+                <div className="another-box">
+                  <div className="avatar"></div>
+                  <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
+                  <h4 className="h4">Farrel Hadinata</h4>
+                  <p className="p">Alumni angkatan IV</p>
+                </div>
+              </div>
+            </Fade>
+            <Fade bottom>
+              <div className="homepage-box">
+                <Apostrope className="homepage-apostrope" />
+                <div className="another-box">
+                  <div className="avatar"></div>
+                  <p className="p">SDIT Aliya itu sekolah yang hampir sempurna, karena sekolah ini memiliki guru-guru yang sangat luar biasa. Guru-guru di SDIT Aliya itu sangat ramah dan pengertian keadaan murid-muridnya. Selain itu guru-guru di sana juga memiliki sifat kekeluargaan antar murid maupun sesama</p>
+                  <h4 className="h4">Farrel Hadinata</h4>
+                  <p className="p">Alumni angkatan IV</p>
+                </div>
+              </div>
+            </Fade>
+          </div>
+        </div>
 
 
       </Layout>

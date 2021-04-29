@@ -59,6 +59,18 @@
 
 // global
 
+.button{
+    background-color: $linkColor;
+    @include submit;
+    width: 7em;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10%;
+        &:hover{
+            background-color: $backgroundColor;
+            color: $mainColor;
+        }
+  }
+
 .view-login{
     height: 70vh;
     flex-direction: column;

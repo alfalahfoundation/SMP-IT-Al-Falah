@@ -45,14 +45,14 @@ render() {
   let submit = "daftar-submit"
   let submitDiv = "daftar-submit-div"
 
-  let programDiv = "daftar-program-div"
+//   let programDiv = "daftar-program-div"
 
-  let metodeDiv = "daftar-metode-div"
-  let daftarMetodeDetail = "daftar-metode-detail"
-  let daftarMetodeDetailP = "daftar-metode-detail-p"
+//   let metodeDiv = "daftar-metode-div"
+//   let daftarMetodeDetail = "daftar-metode-detail"
+//   let daftarMetodeDetailP = "daftar-metode-detail-p"
 
 
-  let daftarFile = "daftar-file"
+//   let daftarFile = "daftar-file"
 
   return (
     <Layout location={location}>
@@ -104,70 +104,6 @@ render() {
       <input type="date" name="tanggal_lahir" onChange={this.handleChange}  className={nama}
       />
       </label>
-
-      {/* <label className={label2}>
-          <span>
-              <p className={p1}> Nama Ayah : </p>
-          </span>
-      <input type="text" name="nama_ayah" onChange={this.handleChange}  className={nama}
-      />
-      </label>
-      <label className={label2}>
-          <span>
-              <p className={p1}> Umur Ayah : </p>
-          </span>
-      <input type="text" name="umur_ayah" onChange={this.handleChange}  className={nama}
-      />
-      </label>
-      <label className={label2}>
-          <span>
-              <p className={p1}> Nama Ibu : </p>
-          </span>
-      <input type="text" name="nama_ibu" onChange={this.handleChange}  className={nama}
-      />
-      </label>
-      <label className={label2}>
-          <span>
-              <p className={p1}> Umur Ibu : </p>
-          </span>
-      <input type="text" name="umur_ibu" onChange={this.handleChange}  className={nama}
-      />
-      </label> */}
-     
-    {/* <div className={programDiv}>
-      <h3>Program yang Di pilih :</h3>
-    </div> */}
-    {/* <div className={daftarFile}>
-      <div>
-          <div >
-              <div >
-                  <label className="text-white"> Kartu Keluarga :</label>
-                  <input type="file" name="upload_file" 
-                  onChange={this.handleInputChange} />
-              </div>
-          </div>
-          <div >
-              <div >
-                  <label >ijazah :</label>
-                  <input type="file" name="upload_file" 
-                  onChange={this.handleInputChange1}
-                  // id="hiddenFileInput1"
-                  />
-              </div>
-          </div>
-      </div>
-      </div> */}
-
-    {/* <div className={metodeDiv}>
-        <h3>Metode Pembayaran :</h3>
-        <div className={daftarMetodeDetail}>
-          <div className={daftarMetodeDetailP}>
-          <p>Setelah Melakukan Transfer Harap Segera Konfirmasi Pembayaran </p>
-          <p>Via: WA: +62 821-8984-1230 </p>
-          <p>Terima Kasih</p>
-          </div>
-        </div>
-    </div> */}
     <div className={submitDiv}>
           {this.state.enabled?<input type="submit" value="Kirim" className={submit}  />:<input type="submit" value="Kirim" className={submitDisable} disabled/>}
     </div>

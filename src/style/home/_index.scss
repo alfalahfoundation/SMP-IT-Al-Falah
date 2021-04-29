@@ -7,7 +7,6 @@
     width: 10vw;
     height: 5vh;
   }
-
   .homepage-A{
     position: absolute;
     right: -10;
@@ -50,43 +49,31 @@
     height: 15em;
     right: 39vw;
     top: -163px;
-    // right: -1vw;
-    // top: -200px;
-    transform: rotate(
-78deg
-);
+    transform: rotate(78deg);
   }
   .homepage-roundbox {
     @include assets;
     opacity: 0;
     width: 20em;
     height: 15vh;
-    // left: -10vw;
     left: -104vw;
     top: 0vw;
-    transform: rotate(
-9deg
-);
+    transform: rotate(9deg);
   }
+  .homepage-halfo{
+    @include assets;
+    display: none;
+    top: 161vh;
+    right: 0px;
+    height: 17rem;
+    width: 4rem;
+  }
+
   .homepage-div1{
     padding-left: 5vw;
     width: 16em;
-    button{
-      background-color: $linkColor;
-      @include submit;
-      width: 7em;
-      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-      border-radius: 10%;
-          &:hover{
-              background-color: $backgroundColor;
-              color: $mainColor;
-          }
-    }
   }
-
   .homepage-div{
-
-    // padding-left: 5vw;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -99,7 +86,6 @@
       color:$backgroundColor;
     }
   }
-
   .homepage-div2{
     padding-left: 5vw;
     padding-bottom: 3rem;
@@ -107,10 +93,13 @@
     display: flex;
     align-self: start;
       p{
-      padding-top: 1em;
-      max-width: 25em;
-      display: flex;
-      color: black;
+        display: flex;
+        color: black;
+
+        padding-top: 1em;
+        padding-bottom: 2rem;
+        margin: 0;
+        max-width: 100vw;
     }
   }
   h2{
@@ -121,7 +110,6 @@
   }
 }
 .homepage1{
-
   background-color: $mainColor;
   height: 95vh;
   h2{
@@ -148,12 +136,25 @@
   padding-top: 20vh;
   display: flex;
   flex-direction: column;
+  .homepage-div3-desc{
+    display : flex;
+    flex-direction: column;
+
+    width: 85vw;
+    padding-left: 5vw;
+    padding-bottom: 10vh;
+
+    h3{
+      font-size: 1.5em;
+      font-weight: 800;
+      margin-bottom: 1em;
+    }
+  }
   .homepage-div3{
     display: flex;
     flex-direction: column;
     .homepage-box{
-
-      width: 15rem;
+      width: 90vw;
       height: 28rem;
       border-radius: 35px;
       box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
@@ -194,74 +195,69 @@
 
 
   .homepage{
-
-    .homepage-roundbox {
-      opacity: 0.1;
-    }
-    .homepage-circle {
-      opacity: .2;
-    }
-
-
-    .homepage-div{
-      // max-width: 120vh;
-      p{
-        margin-left: auto;
-        max-width: 30em;
-        display: flex;
-        margin-right: auto;
-        color:$backgroundColor;
+      .homepage-halfo{
       }
-    }
-  
-    .homepage-div1{
-      width: inherit;
-    }
-    .homepage-div2{
-      p{
-        max-width: 30em;
-        padding-top: 10vh;
-        color: black;
+      .homepage-roundbox {
+        opacity: 0.1;
+      }
+      .homepage-circle {
+        opacity: .2;
+      }
+
+      .homepage-div{
+        p{
+          margin-left: auto;
+          display: flex;
+          margin-right: auto;
+          color:$backgroundColor;
+        }
+      }    
+      .homepage-div1{
+        width: inherit;
+      }
+      .homepage-div2{
+        p{
+          padding-top: 10vh;
+          color:$textColor;
+        }
+        h2{
+          font-size: 2em;
+        }
       }
       h2{
-        font-size: 2em;
+        font-size: 3em;
+        font-weight: 800;
+      }
+    }    
+    .homepage1{
+      background-color: $mainColor;
+      height: 100vh;      
+    }
+    .homepage2{
+      justify-content: flex-end;
+      display: flex;
+      align-items: left;
+      flex-direction: row;
+      padding-top: 10vh;
+      padding-bottom: 25vh;
+      iframe{
+        margin-right: 5vw;
       }
     }
-    h2{
-      font-family: 'Roboto', sans-serif;
-      font-size: 3em;
-      font-weight: 800;
-    }
-  }
-  .homepage1{
-    background-color: $mainColor;
-    height: 100vh;
-    
-  }
-  .homepage2{
-    justify-content: flex-end;
-    display: flex;
-    align-items: left;
-    flex-direction: row;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    iframe{
-      margin-right: 5vw;
-    }
-  }
-  
-
     .homepage3{
-      height:120vh;
+      height:160vh;
       padding-top:0px;
       .homepage-div3{
         flex-direction: row;
         max-width:90vw;
         .homepage-box{
+          height: 32rem;
           margin-right: 5vw;
-          height: 33rem;
           &:last-child{
             margin: 0;
+          }
+          .h4{
+            padding-top: 2rem;
           }
         }
     }
@@ -272,9 +268,15 @@
 
 @include bp ("medium"){
 
+
   .homepage{
+
     text-align: left;
     display: flex;
+      .homepage-halfo{
+        display: block;
+      }
+    }
     .homepage-div1{
       font-size:140%;
     }
@@ -282,33 +284,58 @@
       max-width: 100vw;
       p{
         margin-left: auto;
-        max-width: 30em;
         display: flex;
         margin-right: auto;
         color:$backgroundColor;
       }
-    }
-  
-    .homepage-div2{
-      display: flex;
-      p{
-        text-align: left;
-        max-width: 30em;
-        display: flex;
-        color: black;
-      }
-    }
+    }  
     h2{
-      font-family: 'Roboto', sans-serif;
       font-size: 3em;
       font-weight: 900;
+    }
+  .homepage-div2{
+    p {
+      color:$textColor;
     }
   }
   .homepage1{
     background-color: $mainColor;
-    height: 100vh;
-    
+    height: 100vh;    
   }
+  .homepage3{
+    height: 110vh;
+    .homepage-div3{
+      .homepage-box{
+        height: 28rem;
+      }
+    }
+  }
+}
 
+@include bp ("large"){
 
+  .homepage{
+      .homepage-halfo{
+        top:156vh;
+      }
+      .homepage-div1{
+        font-size: x-large;
+      }
+      .homepage-div2{
+        font-size: larger;
+      }
+      .homepage-div3-desc{
+        font-size: larger;
+      }
+  }
+  .homepage3{
+    height: 90vh;
+    .homepage-div3{
+      .homepage-box{
+        font-size: 1.3em;
+        height: 35rem;
+        width: 20rem;
+      }
+    }
+  }
 }

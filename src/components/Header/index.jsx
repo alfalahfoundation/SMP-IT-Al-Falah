@@ -63,10 +63,10 @@ class Header  extends React.Component {
               <Link to="/berita" className="header-div-link">
                   Berita     
               </Link>
-              <Link to="/tentang-kami" className="header-div-link">
+              <Link to="/about" className="header-div-link">
                   Tentang Kami     
               </Link>
-              <Status/>
+              {/* <Status/> */}
           </div>
           <div className={modal} >
             <button className="btn" onClick={() => this.modalRef1.current.openModal()}>

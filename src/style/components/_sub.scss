@@ -155,18 +155,12 @@
             }
         }
     }
-    .subscribe-desc{
-        width: 30em;
-    }
 
 }
 @include bp("large"){
     .subscribe-div1{
-        margin-left: 20%;
-        @include div1;
+        .subscribe-form{
+            font-size: x-large;
+        }
     }
-    .subscribe-desc{
-        margin-right: 15em;
-    }
-
 }
