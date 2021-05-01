@@ -7,15 +7,35 @@ import Sub from "../components/sub"
 import Logo from "../../static/logoblack.inline.svg"
 
 
-const Footer = () => {
+const Footer = ({sub}) => {
   let footer = "footer-div"
   let footerP = "footer-p"
 
   let footer2 = "footer2"
 
+  
+  const subs = sub
+  
+  // console.log(sub)
+  // console.log(subs)
+  
+  let subscribe
+  
+  if (subs) {
+    subscribe = (
+     null
+    )
+  }else {
+    subscribe = (
+      <Sub></Sub>
+    )
+  }
+
+  // console.log(subscribe)
+  
   return (
     <div className={footer}>
-      <Sub></Sub>
+      {subscribe}
     <div className={footer2}> 
 
       <div className="navigasi">
@@ -48,7 +68,7 @@ const Footer = () => {
     </div>
 
       <p className={footerP}>
-        <a href="#"> Terms & Conditions </a>
+        <a href="google.com"> Terms & Conditions </a>
         &copy; {new Date().getFullYear()} Copyright : {" "} Alfalah 
         
       </p>

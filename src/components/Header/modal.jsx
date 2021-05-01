@@ -1,5 +1,5 @@
 import React, { useState, forwardRef, useImperativeHandle } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Portal from "./portal"
 

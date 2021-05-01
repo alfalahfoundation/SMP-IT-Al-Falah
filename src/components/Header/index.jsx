@@ -1,14 +1,14 @@
 
 
 
-import React, { Component, useRef } from "react";
+import React from "react";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "gatsby"
 
 // import Search from "./Search";
 // import Modals from "./mainmodals"
 // import Sc from "./SearchQuery"
-import Status from "../Status"
+// import Status from "../Status"
 
 import Modal from './modal';
 
